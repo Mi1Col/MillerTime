@@ -19,7 +19,7 @@ def millerTime(bornDate, returnType='return'):
 
     seconds = int(totalSeconds % 60) # Segundos
 
-    result = f"Han pasado: {hours} horas, {minutes} minutos y {seconds} segundos."
+    result = f"Have passed: {hours} hours, {minutes} minutes and {seconds} seconds."
     
     if returnType == 'totalSeconds':
         return totalSeconds
@@ -36,5 +36,5 @@ def millerTime(bornDate, returnType='return'):
     elif returnType == 'result':
         return result
     else:
-        raise ValueError("Tipo de retorno no válido. Use 'totalSeconds', 'hours', 'minutes', 'seconds' o 'result'.")
+        raise ValueError("Type of return is not valid. Use 'totalSeconds', 'hours', 'minutes', 'seconds' or 'result'.")
 
